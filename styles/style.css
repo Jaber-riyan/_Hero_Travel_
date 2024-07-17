@@ -1,0 +1,214 @@
+/* shared items  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.a-black {
+  color: black;
+}
+.a-white {
+  color: white;
+}
+/* shared items end */
+
+/* header section styles  */
+/* navbar styles  */
+nav {
+  width: 90%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-text {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: 23rem;
+  text-align: center;
+}
+.logo-text span {
+  color: rgb(255, 84, 0);
+}
+.logo-text h3 {
+  font-size: 36px;
+  font-weight: 800;
+}
+.logo-text img {
+  width: 3rem;
+  height: 3.5rem;
+}
+.nav-option {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.nav-option p {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(66, 66, 71);
+}
+.nav-option a:hover {
+  color: rgb(255, 84, 0);
+  font-weight: bold;
+}
+/* navbar styles end */
+
+/* banner section styles  */
+.explore-your-travel-section {
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url(../Images/banner-image.png);
+  width: 90%;
+  height: 31rem;
+  margin: 3rem auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 16px;
+  background-color: rgba(19, 19, 24, 0.5);
+  background-blend-mode: overlay;
+}
+.banner-form {
+  /* width: 60%;
+  height: 15%; */
+  margin: 0 auto;
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.banner-form > .where-go-field input[type="text"] {
+  width: 10rem;
+  height: 2.2rem;
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  padding: 0.5rem;
+  border: none;
+}
+.banner-form > .select-type-field select {
+  width: 10rem;
+  height: 2.2rem;
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  padding: 0.5rem;
+  border: none;
+  color: rgba(19, 19, 24, 0.6);
+  cursor: pointer;
+}
+.banner-form > .when-go-field select {
+  width: 10rem;
+  height: 2.2rem;
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  padding: 0.5rem;
+  border: none;
+  color: rgba(19, 19, 24, 0.6);
+  cursor: pointer;
+}
+.find-now-btn button {
+  width: 10rem;
+  height: 2.2rem;
+  border-radius: 8px;
+  background: rgb(255, 84, 0);
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.banner-text h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  top: 6rem;
+  margin-bottom: 1.5rem;
+}
+.banner-text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 3rem;
+}
+/* banner section styles end */
+header {
+  margin-bottom: 6rem;
+}
+/* header section styles end */
+
+
+/* main section  */
+.popular-tour-section {
+    width: 80%;
+    border: 1px solid red;
+    margin: 0 auto;
+    height: 100vh;
+    margin-bottom: 6rem;
+}
+/* main section end */
+
+/* all query code is here  */
+@media screen and (max-width: 576px) {
+  .explore-your-travel-section {
+    border-radius: 2rem;
+  }
+  .logo-text {
+    gap: 0.3rem;
+  }
+  .logo-text img {
+    width: 1.75;
+    height: 2rem;
+  }
+  .logo-text h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+  }
+  .nav-option {
+    gap: 0.9rem;
+  }
+  .nav-option p {
+    font-size: 13px;
+  }
+
+  .banner-text h1 {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  .banner-form {
+    flex-direction: column;
+    /* height: 60%;
+    width: 60%; */
+    border-radius: 0.5rem;
+  }
+
+  .banner-form > .when-go-field select {
+    width: 16rem;
+    height: 3rem;
+  }
+  .banner-form > .where-go-field input[type="text"] {
+    width: 16rem;
+    height: 3rem;
+  }
+  .banner-form > .select-type-field select {
+    width: 16rem;
+    height: 3rem;
+  }
+  .banner-form > .find-now-btn button {
+    width: 16rem;
+    height: 3rem;
+  }
+}
